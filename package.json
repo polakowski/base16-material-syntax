@@ -1,7 +1,7 @@
 {
   "name": "base16-material-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Dark syntax theme for Atom based on Base16 and Google Material Color Palette",
   "keywords": [
     "syntax",
@@ -13,6 +13,6 @@
   "repository": "https://github.com/blisher/base16-material-syntax",
   "license": "MIT",
   "engines": {
-  "atom": ">=1.13.0 <2.0.0"
+    "atom": ">=1.13.0 <2.0.0"
   }
 }
