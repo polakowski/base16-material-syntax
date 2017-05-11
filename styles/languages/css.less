@@ -1,0 +1,64 @@
+.syntax--css {
+  .syntax--support {
+    &.syntax--constant {
+      color: @base0A;
+    }
+
+    &.syntax--property-name {
+      color: @base0B;
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--unit {
+      color: @base09;
+    }
+    &.syntax--important {
+      color: @base0E;
+    }
+    &.syntax--control {
+      color: @base0E;
+    }
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      color: @base0A;
+    }
+
+    &.syntax--color {
+      color: @base09;
+
+      .syntax--punctuation {
+        color: @base0F;
+      }
+    }
+  }
+
+  .syntax--entity {
+    &.syntax--tag {
+      color: @base0F;
+    }
+
+    &.syntax--id {
+      color: @base08;
+    }
+    &.syntax--pseudo-class {
+      color: @base0C;
+    }
+  }
+
+  .syntax--punctuation {
+    // color: @base;
+    &.syntax--definition.syntax--keyword {
+      color: @base;
+      // + .syntax--constant.syntax--numeric:not(.syntax--color) {
+      //   color: @color-to-delete;
+      // }
+    }
+  }
+
+  .syntax--variable {
+    color: @base0D;
+  }
+}

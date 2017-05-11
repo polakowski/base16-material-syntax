@@ -1,0 +1,41 @@
+.syntax--jsx {
+  &.syntax--entity.syntax--tag,
+  &.syntax--component {
+    color: @base09;
+  }
+  &.syntax--entity.syntax--attribute-name {
+    color: @base0B;
+  }
+  &.syntax--punctuation.syntax--section.syntax--embedded {
+    &.syntax--begin, &.syntax--end {
+      color: @base0F;
+    }
+  }
+  .syntax--embedded.syntax--expression {
+    .syntax--punctuation.syntax--separator.syntax--key-value.syntax--attribute {
+      color: @base;
+    }
+  }
+  &.syntax--punctuation.syntax--definition.syntax--tag {
+    color: @base;
+  }
+  .syntax--JSXAttrs {
+    .syntax--keyword.syntax--operator.syntax--assignment {
+      color: @base;
+    }
+  }
+  &.syntax--support.syntax--class.syntax--component.syntax--open {
+    color: @base09;
+  }
+}
+
+atom-text-editor {
+  // Over-nesting to override `language-babel` default styles.
+  .syntax--source.syntax--js.syntax--jsx {
+    .syntax--jsx {
+      .syntax--entity.syntax--other.syntax--attribute-name {
+        font-style: normal;
+      }
+    }
+  }
+}
