@@ -24,8 +24,11 @@
       color: @base;
     }
   }
-  &.syntax--support.syntax--class.syntax--component.syntax--open {
-    color: @base09;
+  &.syntax--support.syntax--class.syntax--component {
+    &.syntax--open,
+    &.syntax--close {
+      color: @base09;
+    }
   }
 }
 
