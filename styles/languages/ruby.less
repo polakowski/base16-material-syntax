@@ -40,4 +40,11 @@
   &.syntax--punctuation.syntax--constant.syntax--hashkey {
     color: @base0F;
   }
+
+  &.syntax--constant {
+    &.syntax--nil,
+    &.syntax--boolean {
+      color: @base0E;
+    }
+  }
 }

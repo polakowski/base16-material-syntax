@@ -45,16 +45,33 @@
       color: @base09;
     }
 
-    &.syntax--boolean {
-      color: @base09;
+    &.syntax--boolean,
+    &.syntax--undefined,
+    &.syntax--null {
+      color: @base0E;
     }
   }
 
   .syntax--punctuation.syntax--begin,
   .syntax--punctuation.syntax--end,
+  .syntax--delimiter.syntax--comma,
   .syntax--delimiter.syntax--object.syntax--comma,
   .syntax--brace.syntax--curly {
-    // color: @color-to-delete;
+    color: @base;
+  }
+
+  .syntax--punctuation.syntax--definition.syntax--string {
+    &.syntax--begin,
+    &.syntax--end {
+      color: @base0A;
+    }
+  }
+
+  .syntax--punctuation.syntax--quasi.syntax--element{
+    &.syntax--begin,
+    &.syntax--end {
+      color: @base0F;
+    }
   }
 
   .syntax--export .syntax--variable.syntax--default {
