@@ -30,13 +30,26 @@
   }
 
   .syntax--string {
-    .syntax--punctuation.syntax--section {
+    .syntax--punctuation.syntax--section.syntax--array {
+      &.syntax--begin, &.syntax--end {
+        color: @base0A;
+      }
+    }
+    .syntax--punctuation.syntax--section.syntax--embedded {
       &.syntax--begin, &.syntax--end {
         color: @base0F;
       }
     }
     .syntax--embedded.syntax--ruby {
       color: @base;
+    }
+  }
+
+  .syntax--symbol {
+    .syntax--punctuation.syntax--section.syntax--array {
+      &.syntax--begin, &.syntax--end {
+        color: @base0F;
+      }
     }
   }
 
