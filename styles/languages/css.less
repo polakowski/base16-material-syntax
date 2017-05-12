@@ -46,6 +46,16 @@
     &.syntax--pseudo-class {
       color: @base0C;
     }
+    &.syntax--entity.syntax--parent-selector-suffix {
+      .syntax--punctuation.syntax--definition.syntax--entity {
+        color: @base09;
+      }
+    }
+  }
+
+  .syntax--entity.syntax--name.syntax--reference,
+  .syntax--entity.syntax--other.syntax--parent-selector .syntax--punctuation.syntax--definition.syntax--entity {
+    color: @base08;
   }
 
   .syntax--punctuation {
