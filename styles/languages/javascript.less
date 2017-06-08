@@ -4,6 +4,8 @@
   }
 
   .syntax--support {
+    color: @base;
+
     &.syntax--variable {
       &.syntax--property {
         color: @base;
@@ -11,6 +13,12 @@
       &.syntax--property.syntax--dom {
         color: @base;
       }
+    }
+    &.syntax--dom {
+      color: @base;
+    }
+    &.syntax--function.syntax--console {
+      color: @base0D;
     }
   }
 
@@ -20,6 +28,10 @@
         color: @color-to-delete;
       }
     }
+  }
+
+  .syntax--class {
+    color: @base09;
   }
 
   .syntax--variable {
@@ -100,16 +112,6 @@
 
   .syntax--keyword.syntax--operator.syntax--accessor {
     color: @base;
-  }
-
-  .syntax--support {
-    color: @base;
-    &.syntax--dom {
-      color: @base;
-    }
-    &.syntax--function.syntax--console {
-      color: @base0D;
-    }
   }
 
   .syntax--this {
