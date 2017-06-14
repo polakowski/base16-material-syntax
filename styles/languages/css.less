@@ -1,10 +1,13 @@
 .syntax--css {
   .syntax--support {
     &.syntax--constant {
+
       color: @base0A;
     }
-
     &.syntax--property-name {
+      color: @base0B;
+    }
+    &.syntax--map.syntax--key {
       color: @base0B;
     }
   }
@@ -25,10 +28,8 @@
     &.syntax--numeric {
       color: @base0A;
     }
-
     &.syntax--color {
       color: @base09;
-
       .syntax--punctuation {
         color: @base0F;
       }
@@ -39,7 +40,6 @@
     &.syntax--tag {
       color: @base0F;
     }
-
     &.syntax--id {
       color: @base08;
     }
@@ -59,12 +59,21 @@
   }
 
   .syntax--punctuation {
-    &.syntax--definition.syntax--keyword {
+    &.syntax--function,
+    &.syntax--definition.syntax--keyword,
+    &.syntax--punctuation.syntax--definition.syntax--bracket,
+    &.syntax--punctuation.syntax--separator {
       color: @base;
+    }
+    &.syntax--separator.syntax--key-value {
+      color: @base0F;
     }
   }
 
   .syntax--variable {
     color: @base0D;
+    &.syntax--set.syntax--map {
+      color: @base0A;
+    }
   }
 }
