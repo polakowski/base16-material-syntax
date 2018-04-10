@@ -5,5 +5,18 @@
 ### Description
 Dark syntax theme for Atom based on Base16 and Google Material color pallettes. The best with Atom Material UI Theme.
 
-### Languages
-Currently PHP and Markdown are unsupported.
+### Languages supported
+- JS (with babel)
+- CoffeeScript
+- CSS (with less and sass)
+- dotenv files
+- GFM (github flavoured markdown)
+- HTML
+- JSON
+- PHP
+- Procfile
+- Python
+- Ruby
+- Unix Shell
+- SQL
+- YAML
