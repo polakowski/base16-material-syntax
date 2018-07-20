@@ -1,17 +1,13 @@
 .syntax--python {
   .syntax--meta {
     &.syntax--function-call {
-      color: @color-to-delete;
-
       .syntax--punctuation {
-        color: @color-to-delete;
+        color: @base;
       }
 
       .syntax--arguments {
-        color: @color-to-delete;
-
         &.syntax--punctuation {
-          color: @color-to-delete;
+          color: @base;
         }
       }
     }
@@ -19,27 +15,33 @@
 
   .syntax--variable {
     &.syntax--self {
-      color: @color-to-delete;
+      color: @base0E;
     }
   }
 
   .syntax--meta {
     .syntax--punctuation {
       &.syntax--inheritance, &.syntax--section {
-        color: @color-to-delete;
+        color: @base;
       }
     }
   }
 
   .syntax--variable {
     &.syntax--parameter {
-      color: @color-to-delete;
+      color: @base;
     }
   }
 
   .syntax--keyword {
+    color: @base0E;
+
     &.syntax--operator {
-      color: @color-to-delete;
+      color: @base0E;
     }
+  }
+
+  .syntax--storage.syntax--type {
+    color: @base0E;
   }
 }
