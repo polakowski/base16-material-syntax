@@ -1,0 +1,52 @@
+.syntax--ts {
+  .syntax--keyword {
+    color: @base0E;
+  }
+
+  .syntax--storage.syntax--type {
+    color: @base0E;
+  }
+
+  .syntax--constant.syntax--language {
+    color: @base0E;
+  }
+
+  .syntax--keyword.syntax--operator.syntax--type.syntax--annotation {
+    color: @base0F;
+  }
+
+  .syntax--name.syntax--function {
+    color: @base0D;
+  }
+
+  // attribute name - green
+  .syntax--meta.syntax--definition.syntax--property,
+  .syntax--variable.syntax--object.syntax--property,
+  .syntax--object-literal.syntax--key {
+    color: @base0B;
+  }
+
+  // primitives and types - orange (class-like)
+  .syntax--entity.syntax--name.syntax--type,
+  .syntax--variable.syntax--other.syntax--constant,
+  .syntax--type.syntax--primitive {
+    color: @base09;
+
+    &.syntax--interface {
+      color: @base0C;
+
+    }
+  }
+
+  // builtin types - purple (keyword-like)
+  .syntax--type.syntax--builtin {
+    color: @base0E;
+  }
+
+  .syntax--object, .syntax--object-literal {
+    .syntax--separator.syntax--key-value {
+      color: @base0F;
+      background-color: unset;
+    }
+  }
+}
