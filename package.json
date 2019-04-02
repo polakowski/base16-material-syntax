@@ -10,7 +10,7 @@
     "material",
     "material design"
   ],
-  "repository": "https://github.com/blisher/base16-material-syntax",
+  "repository": "https://github.com/polakowski/base16-material-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.13.0 <2.0.0"
