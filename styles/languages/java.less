@@ -1,0 +1,28 @@
+.syntax--java {
+  .syntax--punctuation {
+    color: @base;
+
+    &.syntax--string {
+      color: @base0A;
+    }
+  }
+
+  .syntax--storage.syntax--type {
+    color: @base09;
+
+    &.syntax--primitive {
+      color: @base0E;
+    }
+  }
+
+  .syntax--method,
+  .syntax--method-call,
+  .syntax--function,
+  .syntax--function-call {
+    color: @base;
+  }
+
+  .syntax--storage.syntax--import {
+    color: @base0C;
+  }
+}
